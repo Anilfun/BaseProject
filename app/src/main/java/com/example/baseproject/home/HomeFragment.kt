@@ -1,20 +1,19 @@
-package com.example.baseproject
+package com.example.baseproject.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import com.example.baseproject.base.BaseFragment
 import com.example.baseproject.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun preCreate(view: View?, bundle: Bundle?) {
-        TODO("Not yet implemented")
+        val homeVm = HomeViewModel()
+        rootView.homeVM = homeVm
     }
 
     override fun exitFragment() {
-        TODO("Not yet implemented")
+
     }
 
 }
